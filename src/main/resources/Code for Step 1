@@ -13,8 +13,6 @@
 // Schritt 1.2 Test code ausführen (-> führt zu Fehler)
 // Schritt 1.3 Code committen (Commit-Meldung "Comit nach Step 1") und ins GitHub-Repository pushen
 
-// TODO: Muss der Jenkins-Job beim erstem Mal manuell gestartet werden?
-
 // In Datei TimePairTest.java
 
 package TDDShowcaseTestPackage;
