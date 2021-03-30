@@ -1,0 +1,28 @@
+// Im Step 1 wird der erste Test geschrieben. Das entpricht dem Schritt rot im Red-Green-Refactoring-Cycle
+// Es wird die Zeitdifferenz für ein erstes Zeitpaar berechnet. Die Zeitdifferenz wird einfach als 1 Stunde angenommen.
+
+// Das ist wichtig:
+// Beim Schreiben des Tests wird bereits eine Designentscheidung über die zu testende Klasse gemacht.
+// Der Name der Klasse wird festgelegt und definiert, dass es eine Funktion getTimeDifference() gibt.
+// Der korrekte Rückgabewert wird mit assertEquals überprüft.
+// Beim Schreiben der Testklasse weist der Editor bereits darauf hin, dass es ein Problem mit der TimePair-Klasse gibt.
+// Deshalb sind alle (noch) nicht definierten Elemente rot unterringelt.
+// Lässt man den Test laufen (maven Test) wird die Übersetzung fehlschlagen.
+
+// Nach dem Testlauf, den Code ins Repository committen und pushen.
+
+package TDDShowcaseTestPackage;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class TimePairTest {
+
+    TimePair aTimePair = new TimePair();
+
+    @Test
+    public void timeDifferenceTest_1h () {
+        aTimePair.setTimeValues("10:00", "11:00");
+        assertEquals(1.0, aTimePair.getTimeDifference(), 0.0);
+    }
+}
