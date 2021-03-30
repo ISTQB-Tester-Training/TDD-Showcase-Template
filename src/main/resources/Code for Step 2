@@ -11,7 +11,7 @@
 // Schritt 2.2 In Datei TimePairTest.java die Klassen mit dem produktiven Code bekannt machen.
 //             import TDDShowcasePackage.*; in Datei TimePairTest.java oben einfügen
 // Schritt 2.3 Test code ausführen (-> Erfolgreich)
-// Schritt 2.4 Code committen und ins GitHub-Repository pushen
+// Schritt 2.4 Code committen (Commit-Meldung "Comit nach Step 2") und ins GitHub-Repository pushen
 
 // In Datei TimePair.java
 
