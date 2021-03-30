@@ -1,6 +1,6 @@
-package TDDShowcaseTestPackage;
+package tddshowcasetestpackage;
 
-import TDDShowcasePackage.*;
+import tddshowcasepackage.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
