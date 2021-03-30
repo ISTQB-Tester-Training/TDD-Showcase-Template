@@ -1,0 +1,40 @@
+// In Step 2 wird der Code geschrieben. Das entpricht dem Schritt grün im Red-Green-Refactoring-Cycle.
+
+// Das ist wichtig:
+// Es wird gerade so viel Code geschrieben, dass der Test erfolgreich ist. Deshalb wird der Return-Wert "1.0"
+// hartkodiert in die Methode geschrieben.
+// Es werden auch wieder Designentscheidungen getroffen, nämlich, dass es eine Methode setTimeValues geben soll
+// und dass die Methode getTimeDifference mit und ohne Parameter aufgerufen werden kann.
+// Nachdem die Klasse geschrieben ist und in die Testklasse importiert wurde, verschwinden alle roten Markierungen im Editor.
+
+// Schritt 2.1 Code in Datei TimePair.java kopieren
+// Schritt 2.2 In Datei TimePairTest.java die Klassen mit dem produktiven Code bekannt machen.
+//             import TDDShowcasePackage.*; in Datei TimePairTest.java oben einfügen
+// Schritt 2.3 Test code ausführen (-> Erfolgreich)
+// Schritt 2.4 Code committen und ins GitHub-Repository pushen
+
+// In Datei TimePair.java
+
+package TDDShowcasePackage;
+
+public class TimePair {
+
+    private String startTime, endTime;
+
+    public TimePair() {};
+
+    public void setTimeValues (String strStartTime, String strEndTime) {
+        startTime = strStartTime;
+        endTime = strEndTime;
+    }
+
+    public double getTimeDifference(String strStartTime, String strEndTime) {
+        setTimeValues(strStartTime, strEndTime);
+        return getTimeDifference();
+    }
+
+    public double getTimeDifference() {
+        return 1.0;
+    }
+}
+

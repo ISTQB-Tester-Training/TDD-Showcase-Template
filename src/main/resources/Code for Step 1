@@ -1,4 +1,4 @@
-// Im Step 1 wird der erste Test geschrieben. Das entpricht dem Schritt rot im Red-Green-Refactoring-Cycle
+// Im Step 1 wird der erste Test geschrieben. Das entpricht dem Schritt rot im Red-Green-Refactoring-Cycle.
 // Es wird die Zeitdifferenz für ein erstes Zeitpaar berechnet. Die Zeitdifferenz wird einfach als 1 Stunde angenommen.
 
 // Das ist wichtig:
@@ -9,7 +9,14 @@
 // Deshalb sind alle (noch) nicht definierten Elemente rot unterringelt.
 // Lässt man den Test laufen (maven Test) wird die Übersetzung fehlschlagen.
 
-// Nach dem Testlauf, den Code ins Repository committen und pushen.
+// Schritt 1.1 Code in die Datei TimePairTest.java kopieren.
+// Schritt 1.2 Test code ausführen (-> führt zu Fehler)
+// Schritt 1.3 Code committen und ins GitHub-Repository pushen
+
+
+// TODO: Muss der Jenkins-Job beim erstem Mal manuell gestartet werden?
+
+// In Datei TimePairTest.java
 
 package TDDShowcaseTestPackage;
 
