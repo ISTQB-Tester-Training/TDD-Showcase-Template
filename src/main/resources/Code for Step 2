@@ -19,7 +19,8 @@ package tddshowcasepackage;
 
 public class TimePair {
 
-    private String startTime, endTime;
+    private String startTime = null;
+    private String endTime = null;
 
     public TimePair() {};
 

@@ -18,8 +18,8 @@ import java.time.temporal.ChronoUnit;
 
 public class TimePair {
 
-    private String startTime;
-    private String endTime;
+    private String startTime = null;
+    private String endTime = null;
 
     public TimePair() {}
 
