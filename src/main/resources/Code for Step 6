@@ -108,7 +108,7 @@ public class TimePair {
         return getTimeDifference();
     }
 
-    public double getTimeDifference() throws TimePairException {
+    public double getTimeDifference() {
 
         if (startTime == null || endTime == null) {
             throw new TimePairException("Start oder End Time not set", 500);

@@ -78,7 +78,7 @@ public class TimePair {
         return getTimeDifference();
     }
 
-    public double getTimeDifference() throws TimePairException {
+    public double getTimeDifference() {
 
         try {
             LocalTime checkStartTime = LocalTime.parse(startTime);
