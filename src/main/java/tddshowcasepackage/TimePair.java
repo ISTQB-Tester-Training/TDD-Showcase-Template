@@ -20,19 +20,19 @@ public class TimePair {
         return getTimeDifference();
     }
 
-    public double getTimeDifference() throws TimePairException {
+    public double getTimeDifference() {
 
         if (startTime == null || endTime == null) {
             throw new TimePairException("Start oder End Time not set", 500);
         }
 
-        try { LocalTime checkStartTime = LocalTime.parse(startTime);
+        try { LocalTime.parse(startTime);
         }
         catch (Exception e) {
             throw new TimePairException(e.getMessage() + "(Input value: " + startTime + ")", 501);
         }
 
-        try { LocalTime checkEndTime = LocalTime.parse(endTime);
+        try { LocalTime.parse(endTime);
         }
         catch (Exception e) {
             throw new TimePairException(e.getMessage() + "(Input value: " + endTime + ")", 502);
